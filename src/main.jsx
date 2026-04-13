@@ -7,6 +7,7 @@ import RootLayout from './layout/RootLayout.jsx';
 import Homepage from './home/Homepage.jsx';
 import TimeLine from './timeline/TimeLine.jsx';
 import Stats from './stats/Stats.jsx';
+import FriendDetails from './myFriendData/FriendDetails.jsx';
 
 const router = createBrowserRouter([
   { path: "/", 
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
       {
         path : "/stats",
         Component :Stats
+      },
+      {
+        path:"/friendDetails/:id",
+        Component:FriendDetails,
+        loader:()=>fetch("/friends.json")
       }
     ]
   }
