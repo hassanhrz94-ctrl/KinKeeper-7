@@ -10,7 +10,6 @@ const TYPE_IMAGE = {
   text: TextImg,
   video: VideoImg,
 };
-
 const TimelineCard = ({ item }) => (
   <div className="flex items-center gap-4 px-6 py-4 hover:bg-gray-50 transition-colors">
 
@@ -30,7 +29,7 @@ const TimelineCard = ({ item }) => (
   </div>
 );
 
-// ─── Timeline ─────────────────────────────────────────────────────────────────
+
 const TimeLine = () => {
   const { call, text, video } = useContext(FriendContext);
   const [filter, setFilter] = useState('all');
