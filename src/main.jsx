@@ -9,6 +9,7 @@ import TimeLine from './timeline/TimeLine.jsx';
 import Stats from './stats/Stats.jsx';
 import FriendDetails from './myFriendData/FriendDetails.jsx';
 import FriendProvider from './context/FriendProvider.jsx';
+import { ToastContainer } from 'react-toastify';
 
 const router = createBrowserRouter([
   { path: "/", 
@@ -41,6 +42,7 @@ createRoot(document.getElementById('root')).render(
     <FriendProvider>
 
       <RouterProvider router={router} />,
+       <ToastContainer />
     </FriendProvider>
   </StrictMode>,
 )

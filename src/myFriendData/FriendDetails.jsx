@@ -8,8 +8,8 @@ const FriendDetails = () => {
 
     const expectedFriend = friends.find((friend) => friend.id === parseInt(id));
 
-    const{handleCall}=useContext(FriendContext)
-    console.log(handleCall)
+    const{handleCall,handleText,handleVideo}=useContext(FriendContext)
+    console.log(handleCall,handleText,handleVideo)
 
     if (!expectedFriend) return <div>Friend not found</div>;
 
@@ -121,14 +121,14 @@ const FriendDetails = () => {
                             Call
                         </button>
                         {/* Text Button */}
-                        <button className="flex-1 flex flex-col items-center gap-1.5 py-4 rounded-xl border border-gray-200 text-[13px] text-gray-700 hover:bg-gray-50">
+                        <button onClick={()=>handleText(expectedFriend)} className="flex-1 flex flex-col items-center gap-1.5 py-4 rounded-xl border border-gray-200 text-[13px] text-gray-700 hover:bg-gray-50">
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
                                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                             </svg>
                             Text
                         </button>
                         {/* Video Button */}
-                        <button className="flex-1 flex flex-col items-center gap-1.5 py-4 rounded-xl border border-gray-200 text-[13px] text-gray-700 hover:bg-gray-50">
+                        <button  onClick={()=>handleVideo(expectedFriend)} className="flex-1 flex flex-col items-center gap-1.5 py-4 rounded-xl border border-gray-200 text-[13px] text-gray-700 hover:bg-gray-50">
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
                                 <polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
                             </svg>
