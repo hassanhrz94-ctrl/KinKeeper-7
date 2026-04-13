@@ -1,16 +1,26 @@
-# React + Vite
+👥 KinKeeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A smart way to manage friendships and track your communication history.
 
-Currently, two official plugins are available:
+📖 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+KinKeeper is a modern friend management application that helps you stay connected and organized. You can view your friends' information, interact with them through calls, texts, and video, and keep a complete history of your communication in a timeline. It also provides useful statistics to analyze your engagement.
 
-## React Compiler
+🔗 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👉 Visit Live Site: https://your-live-link.com
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✨ Features
+📅 Timeline Tracking
+Keep a complete history of calls, messages, and video interactions with your friends.
+📊 Statistics Dashboard
+Visual insights into your communication patterns and activity.
+🔍 Smart Filtering
+Easily filter and sort friends or interactions based on your needs.
+👥 Friend Management
+View and manage detailed friend profiles in one place.
+🛠️ Technologies Used
+⚛️ React
+🔀 React Router
+🌐 Context API
+🎨 Tailwind CSS
