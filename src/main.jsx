@@ -8,6 +8,7 @@ import Homepage from './home/Homepage.jsx';
 import TimeLine from './timeline/TimeLine.jsx';
 import Stats from './stats/Stats.jsx';
 import FriendDetails from './myFriendData/FriendDetails.jsx';
+import FriendProvider from './context/FriendProvider.jsx';
 
 const router = createBrowserRouter([
   { path: "/", 
@@ -37,6 +38,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <FriendProvider>
+
       <RouterProvider router={router} />,
+    </FriendProvider>
   </StrictMode>,
 )

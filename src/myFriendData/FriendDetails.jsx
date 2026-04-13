@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router';
+import { FriendContext } from '../context/FriendProvider';
 
 const FriendDetails = () => {
     const { id } = useParams();
     const friends = useLoaderData();
 
     const expectedFriend = friends.find((friend) => friend.id === parseInt(id));
+
+    const{handleCall}=useContext(FriendContext)
+    console.log(handleCall)
 
     if (!expectedFriend) return <div>Friend not found</div>;
 
@@ -65,7 +69,7 @@ const FriendDetails = () => {
 
                             {/* Action Buttons */}
                             <div className="flex flex-col gap-1">
-                                <button className="flex items-center gap-2 px-3 py-2 rounded-lg text-[14px] text-gray-700 hover:bg-gray-50 w-full text-left">
+                                <button  className="flex items-center gap-2 px-3 py-2 rounded-lg text-[14px] text-gray-700 hover:bg-gray-50 w-full text-left">
                                     {/* Clock icon */}
                                     <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                                         <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
@@ -110,7 +114,7 @@ const FriendDetails = () => {
                     <p className="text-[14px] font-semibold text-gray-900 mb-3">Quick Check-In</p>
                     <div className="flex gap-3">
                         {/* Call Button */}
-                        <button className="flex-1 flex flex-col items-center gap-1.5 py-4 rounded-xl border border-gray-200 text-[13px] text-gray-700 hover:bg-gray-50">
+                        <button onClick={()=>handleCall(expectedFriend)} className="flex-1 flex flex-col items-center gap-1.5 py-4 rounded-xl border border-gray-200 text-[13px] text-gray-700 hover:bg-gray-50">
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/>
                             </svg>

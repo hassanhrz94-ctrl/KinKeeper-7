@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { FriendContext } from '../context/FriendProvider';
 
 const TimeLine = () => {
+    const{call}=useContext(FriendContext)
     return (
         <div>
-           timeline 
+           {
+            call.length
+           }
+           {call.name}
         </div>
     );
 };
