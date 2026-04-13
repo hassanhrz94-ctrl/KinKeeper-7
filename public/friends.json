@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arafat Rahman",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "arafat.rahman@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["university", "close friend"],
+    "bio": "We studied Computer Science together at DU. Used to work on coding projects and grab late-night tea.",
+    "goal": 14,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/45.jpg",
+    "email": "nusrat.jahan@yahoo.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["office", "mentor"],
+    "bio": "Former team lead at my internship. Always guided me through tough deadlines and career decisions.",
+    "goal": 14,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/76.jpg",
+    "email": "tanvir.hasan@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["school", "football"],
+    "bio": "School friend and regular football partner. We still play every weekend when possible.",
+    "goal": 14,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 4,
+    "name": "Farhana Ahmed",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "farhana.ahmed@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["family friend"],
+    "bio": "Family friend who lives in Chittagong. We catch up mostly during holidays and family gatherings.",
+    "goal": 14,
+    "next_due_date": "2026-04-03"
+  },
+  {
+    "id": 5,
+    "name": "Sabbir Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/54.jpg",
+    "email": "sabbir.hossain@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["gym", "fitness"],
+    "bio": "Gym buddy who keeps me motivated. We track workouts and push each other to stay consistent.",
+    "goal": 14,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 6,
+    "name": "Mehjabin Karim",
+    "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "email": "mehjabin.karim@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["project", "design"],
+    "bio": "Worked together on a UI/UX project. Great at design thinking and always gives honest feedback.",
+    "goal": 14,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 7,
+    "name": "Rakib Chowdhury",
+    "picture": "https://randomuser.me/api/portraits/men/21.jpg",
+    "email": "rakib.chowdhury@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["startup", "network"],
+    "bio": "Met at a startup event in Dhaka. We discussed business ideas and future collaborations.",
+    "goal": 14,
+    "next_due_date": "2026-04-07"
+  },
+  {
+    "id": 8,
+    "name": "Sharmin Akter",
+    "picture": "https://randomuser.me/api/portraits/women/30.jpg",
+    "email": "sharmin.akter@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["neighbor"],
+    "bio": "Neighbor and good friend. We often chat in the evenings and share local news.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  }
+]
