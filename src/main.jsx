@@ -10,6 +10,7 @@ import Stats from './stats/Stats.jsx';
 import FriendDetails from './myFriendData/FriendDetails.jsx';
 import FriendProvider from './context/FriendProvider.jsx';
 import { ToastContainer } from 'react-toastify';
+import ErrorPage from './Errorpage/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   { path: "/", 
@@ -33,7 +34,8 @@ const router = createBrowserRouter([
         Component:FriendDetails,
         loader:()=>fetch("/friends.json")
       }
-    ]
+    ],
+    errorElement :<ErrorPage/>
   }
 ]);
 
