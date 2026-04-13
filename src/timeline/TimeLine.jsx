@@ -4,18 +4,17 @@ import CallImg from "../../assets/call.png";
 import VideoImg from "../../assets/video.png";
 import TextImg from "../../assets/text.png";
 
-// type অনুযায়ী সঠিক image দেখাবে
+
 const TYPE_IMAGE = {
   call: CallImg,
   text: TextImg,
   video: VideoImg,
 };
 
-// ─── Card ─────────────────────────────────────────────────────────────────────
 const TimelineCard = ({ item }) => (
   <div className="flex items-center gap-4 px-6 py-4 hover:bg-gray-50 transition-colors">
 
-    {/* item.type দিয়ে সঠিক image সিলেক্ট হবে */}
+  
     <img src={TYPE_IMAGE[item.type]} alt={item.type} className="w-5 h-5" />
 
     <div className="flex-1">
