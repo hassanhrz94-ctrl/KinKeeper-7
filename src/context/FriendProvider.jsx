@@ -15,7 +15,7 @@ if(ifExistCall){
 }
 else{
     setCall([...call,currentConversation])
-    toast.success(`${currentConversation.name} is added to the timeline`)
+    toast.success(`Call with ${currentConversation.name}`)
 }
 }
 const handleText =(currentConversation)=>{
@@ -26,7 +26,7 @@ if(ifExistText){
 }
 else{
     setText([...text,currentConversation])
-    toast.success(`${currentConversation.name} is added to the timeline`)
+    toast.success(`Text with ${currentConversation.name}`)
 }
 }
 const handleVideo =(currentConversation)=>{
@@ -37,7 +37,7 @@ if(ifExistVideo){
 }
 else{
     setVideo([...video,currentConversation])
-    toast.success(`${currentConversation.name} is added to the timeline`)
+    toast.success(`video with ${currentConversation.name}`)
 }
 }
 
