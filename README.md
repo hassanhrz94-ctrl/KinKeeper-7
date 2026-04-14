@@ -8,7 +8,7 @@ KinKeeper is a modern friend management application that helps you stay connecte
 
 🔗 Live Demo
 
-👉 Visit Live Site: https://your-live-link.com
+👉 Visit Live Site: https://nimble-marzipan-45aa60.netlify.app/
 
 ✨ Features
 📅 Timeline Tracking
